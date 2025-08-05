@@ -50,11 +50,25 @@
             background: #333;
             color: #fff;
             border: none;
+            outline: none;
+            box-shadow: none;
+            transition: background 0.3s, transform 0.2s;
+            display: inline-block;
+            text-align: center;
+            line-height: 60px; /* Tugma ichidagi matnni markazlash */
+            font-family: Arial, sans-serif;
+            font-weight: bold;
+            border: 2px solid #fff; /* Tugma chegarasi */
+            border-top: none;
+            border-left: none;
+            border-right: none;
             border-radius: 5px;
         }
         #controls button:hover {
             background: #444;
             color: #fff;
+            transform: scale(1.1);
+
         }
     </style>
 </head>
@@ -63,10 +77,10 @@
     <button id="restart" style="display:none; margin-top:10px;">Qayta boshlash</button>
 
     <div id="controls">
-        <button id="up">⬆️</button><br>
-        <button id="left">⬅️</button>
-        <button id="down">⬇️</button>
-        <button id="right">➡️</button>
+        <button id="up">⬆</button><br>
+        <button id="left">⬅</button>
+        <button id="down">⬇</button>
+        <button id="right">➡</button>
     </div>
 
     <script>
